@@ -1,0 +1,12 @@
+# Node
+*.log
+*.log.*
+node_modules
+
+out
+dist
+
+logs
+data.db
+
+.DS_STORE

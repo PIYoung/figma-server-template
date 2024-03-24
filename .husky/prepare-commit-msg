@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+exec >/dev/tty 2>&1 
+
+HUSKY_DIR="$(dirname -- "$0")/_/husky.sh"
+
+readonly HUSKY_DIR
+
+. "$HUSKY_DIR"

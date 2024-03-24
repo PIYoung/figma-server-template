@@ -1,0 +1,5 @@
+{
+  "watch": ["./src/*"],
+  "legacyWatch": true,
+  "delay": 1000
+}

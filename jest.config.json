@@ -1,0 +1,36 @@
+{
+  "displayName": {
+    "name": "figma-plugin-template",
+    "color": "blue"
+  },
+  "moduleFileExtensions": ["ts", "js", "html"],
+  "testMatch": [
+    "<rootDir>/tests/**/__tests__/**/*.[jt]s?(x)",
+    "<rootDir>/tests/**/*(*.)@(spec|test).[jt]s?(x)"
+  ],
+  "verbose": true,
+  "testEnvironment": "node",
+  "testEnvironmentOptions": {
+    "NODE_ENV": "test"
+  },
+  "roots": ["<rootDir>/src", "<rootDir>/tests"],
+  "setupFiles": ["<rootDir>/tests/setup-dotenv.ts"],
+  "setupFilesAfterEnv": ["<rootDir>/tests/setup-jest.ts"],
+  "watchPathIgnorePatterns": ["<rootDir>/node_modules"],
+  "globalSetup": "<rootDir>/tests/setup-global.ts",
+  "globalTeardown": "<rootDir>/tests/teardown-global.ts",
+  "restoreMocks": true,
+  "collectCoverageFrom": ["<rootDir>/src/**/*.ts"],
+  "coverageProvider": "v8",
+  "coverageDirectory": "<rootDir>/coverage",
+  "coveragePathIgnorePatterns": ["<rootDir>/node_modules/"],
+  "coverageReporters": ["json", "html", "text", "clover"],
+  "coverageThreshold": {
+    "global": {
+      "branches": 80,
+      "functions": 80,
+      "lines": 80,
+      "statements": 80
+    }
+  }
+}

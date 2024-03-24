@@ -1,2 +1,1 @@
-# figma-server-template
-✨ express
+# FIGMA-SERVER-TEMPLATE

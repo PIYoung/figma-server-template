@@ -1,0 +1,52 @@
+{
+  "root": true,
+  "plugins": ["prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "globals": {
+    "NodeJS": true,
+    "Express": true
+  },
+  "rules": {
+    "no-unused-vars": 0,
+    "no-async-promise-executor": 0,
+    "no-case-declarations": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "@typescript-eslint/no-non-null-assertion": 0
+  },
+  "overrides": [
+    {
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended"],
+      "files": [
+        "tests/**/*.spec.ts",
+        "tests/setup-*.ts",
+        "tests/teardown-*.ts"
+      ],
+      "env": {
+        "jest": true
+      },
+      "rules": {
+        "jest/no-disabled-tests": 0,
+        "jest/no-focused-tests": 0,
+        "jest/no-identical-title": 0,
+        "jest/prefer-to-have-length": 0,
+        "jest/valid-expect": 0
+      }
+    }
+  ]
+}
